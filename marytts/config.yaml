@@ -19,5 +19,5 @@ ports_description:
 options:
   language: en
 schema:
-  language: list(de|en|fr|it|in|tu|lu)
+  language: list(de|en|fr|it|in|tu|lu|ru_irina|ru_elena)
   voice: match(^https?://.+\.zip)?
