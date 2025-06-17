@@ -11,10 +11,6 @@ RUN curl -L -o marytts.zip https://github.com/marytts/marytts/archive/refs/tags/
     rm marytts.zip && \
     chmod +x /opt/marytts-5.2.1/marytts-server
 
-# Копируем скрипт запуска
-COPY run.sh /run.sh
-RUN chmod a+x /run.sh
 
 EXPOSE 59125
 
-CMD [ "/run.sh" ]
