@@ -9,8 +9,6 @@ WORKDIR /opt
 RUN curl -L -o marytts.zip https://github.com/marytts/marytts/archive/refs/tags/v5.2.1.zip && \
     unzip marytts.zip && \
     rm marytts.zip && \
-    chmod +x /opt/marytts-5.2.1/marytts-server
-
-
+    
 EXPOSE 59125
 
