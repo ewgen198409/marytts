@@ -6,7 +6,7 @@ url: https://github.com/ewgen198409/MaryTTS
 webui: http://[HOST]:[PORT:59125]
 arch:
   - amd64
-image: ghcr.io/ewgen198409/marytts-{arch}
+image: ghcr.io/ewgen198409/marytts-amd64:1.0.0
 init: false
 ports:
   59125/tcp: 59125
@@ -17,3 +17,5 @@ options:
 schema:
   language: list(de|en|fr|it|in|tu|lu|ru_irina|ru_elena)
   voice: match(^https?://.+\.zip)?
+build_from":
+  amd64: ghcr.io/hassio-addons/base:12.2.7
