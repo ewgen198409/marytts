@@ -9,12 +9,7 @@
   "ports": {
     "59125/tcp": 59125
   },
-  "map": ["config:rw"],
-  "host_network": false,
-  "webui": "http://[HOST]:[PORT:59125]/",
   "build_from": {
-    "amd64": "openjdk:8-jdk"
-  },
-  "options": {},
-  "schema": {}
+    "amd64": "ghcr.io/hassio-addons/base:12.2.7"
+  }
 }
