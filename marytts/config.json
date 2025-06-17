@@ -14,8 +14,8 @@
   "ingress": false,
   "host_network": false,
   "map": ["config:rw"],
-  "build_from": {
-    "amd64": "ghcr.io/hassio-addons/base:12.2.7"
+  // "build_from": {
+  //   "amd64": "ghcr.io/hassio-addons/base:12.2.7"
   },
   "ports_description": {
     "59125/tcp": "Port to access MaryTTS"
