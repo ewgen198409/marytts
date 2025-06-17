@@ -21,7 +21,7 @@ The MaryTTS system as Home Assistant Supervisor Addon, to integrate a local TTS 
 [i386-badge]: https://img.shields.io/badge/i386-yes-green.svg
 
 [repository-badge]: https://img.shields.io/badge/Add-repository-41BDF5?logo=home-assistant&style=for-the-badge
-[repository-url]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A//github.com/Poeschl-HomeAssistant-Addons/repository
+[repository-url]: https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A//github.com/ewgen198409/repository
 
 [install-badge]: https://img.shields.io/badge/Install%20on-Home%20Assistant-41BDF5?logo=home-assistant&style=for-the-badge
 [install-url]: https://my.home-assistant.io/redirect/supervisor_addon?addon=68413af6_marytts
