@@ -22,6 +22,10 @@ else
 		voice_pack="https://github.com/marytts/voice-dfki-ot-hsmm/releases/download/v${MARYTTS_VERSION}/voice-dfki-ot-hsmm-${MARYTTS_VERSION}.zip"
 	elif [ "$(bashio::config 'language')" == 'lu' ]; then
 		voice_pack="https://github.com/marytts/voice-marylux-lb/releases/download/v${MARYTTS_VERSION}/voice-marylux-lb-${MARYTTS_VERSION}.zip"
+	elif [ "$(bashio::config 'language')" == 'ru_irina' ]; then
+		voice_pack="https://github.com/marytts/voice-ac-irina/releases/download/v5.2.1/voice-ac-irina-5.2.1.zip"
+	elif [ "$(bashio::config 'language')" == 'ru_elena' ]; then
+		voice_pack="https://github.com/marytts/voice-ac-irina/releases/download/v5.2.1/voice-ac-elena-5.2.1.zip"
 	fi
 fi
 
