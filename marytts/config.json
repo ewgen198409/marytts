@@ -1,0 +1,20 @@
+{
+  "name": "MaryTTS",
+  "version": "1.0.0",
+  "slug": "marytts",
+  "description": "TTS сервер на базе MaryTTS",
+  "arch": ["amd64"],
+  "startup": "services",
+  "boot": "auto",
+  "ports": {
+    "59125/tcp": 59125
+  },
+  "map": ["config:rw"],
+  "host_network": false,
+  "webui": "http://[HOST]:[PORT:59125]/",
+  "build_from": {
+    "amd64": "openjdk:8-jdk"
+  },
+  "options": {},
+  "schema": {}
+}
