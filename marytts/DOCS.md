@@ -1,12 +1,12 @@
 # Configuration
 
 ```yaml
-language: de
+language: ru_irina
 ```
 
 ### `language`
 
-One of the languages `de`, `en`, `fr`, `it`, `in`, `tu` and `lu`. This should be the same as you configured in Home Assistant.
+One of the languages `de`, `en`, `fr`, `it`, `in`, `tu`  `lu` `ru_irina` `ru_elena`. This should be the same as you configured in Home Assistant.
 The voices are downloaded on demand.
 
 ### `voice` (optional)
