@@ -6,10 +6,10 @@ RUN apk add --no-cache openjdk8 unzip curl bash
 
 # Устанавливаем MaryTTS
 WORKDIR /opt
-RUN curl -L -o marytts.zip https://github.com/marytts/marytts/releases/download/v5.2/marytts-5.2.1.zip && \
+RUN curl -L -o marytts.zip https://github.com/marytts/marytts/archive/refs/tags/v5.2.1.zip && \
     unzip marytts.zip && \
     rm marytts.zip && \
-    chmod +x /opt/marytts-5.2/marytts-server
+    chmod +x /opt/marytts-5.2.1/marytts-server
 
 # Копируем скрипт запуска
 COPY run.sh /run.sh
