@@ -1,18 +1,20 @@
 ARG BUILD_FROM
-FROM $BUILD_FROM AS BUILD
+FROM $BUILD_FROM
 
-FROM openjdk:8-jdk
+# Устанавливаем нужные пакеты
+RUN apk add --no-cache openjdk8 unzip curl bash
 
-WORKDIR /opt/marytts
+# Устанавливаем MaryTTS
+WORKDIR /opt
+RUN curl -L -o marytts.zip https://github.com/marytts/marytts/releases/download/v5.2/marytts-5.2.1.zip && \
+    unzip marytts.zip && \
+    rm marytts.zip && \
+    chmod +x /opt/marytts-5.2/marytts-server
 
-# Копируем все необходимые файлы (допустим, ты положил дистрибутив в папку build)
-COPY marytts-5.2.zip .
+# Копируем скрипт запуска
 COPY run.sh /run.sh
-
-RUN apt-get update && apt-get install -y unzip && \
-    unzip marytts-5.2.zip && \
-    chmod +x /run.sh
+RUN chmod a+x /run.sh
 
 EXPOSE 59125
 
-CMD ["/run.sh"]
+CMD [ "/run.sh" ]

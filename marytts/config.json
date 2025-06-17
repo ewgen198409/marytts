@@ -3,13 +3,28 @@
   "version": "1.0.0",
   "slug": "marytts",
   "description": "TTS сервер на базе MaryTTS",
-  "arch": ["amd64"],
   "startup": "services",
   "boot": "auto",
+  "arch": ["amd64"],
   "ports": {
     "59125/tcp": 59125
   },
+  "webui": "http://[HOST]:[PORT:59125]/",
+  "ingress": false,
+  "host_network": false,
+  "map": ["config:rw"],
   "build_from": {
     "amd64": "ghcr.io/hassio-addons/base:12.2.7"
+  },
+  "ports_description": {
+    "59125/tcp": "Port to access MaryTTS"
+  },
+  "schema": {
+    "language": "list(de|en|fr|it|in|tu|lu|ru_irina|ru_elena)",
+    "voice": "match(^https?://.+\\.zip)?"
+  },
+  "options": {
+    "language": "en"
   }
 }
+
