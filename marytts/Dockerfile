@@ -2,8 +2,7 @@ ARG BUILD_FROM
 FROM $BUILD_FROM
 
 # Устанавливаем нужные пакеты
-RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repositories && \
-    apk add --no-cache openjdk8-jre unzip curl bash
+RUN apk add --no-cache openjdk17-jre unzip curl bash
 
 # Устанавливаем MaryTTS
 WORKDIR /opt
